@@ -32,7 +32,7 @@ mail_count+=(["script"]="${segments_path}/mail_count_maildir.sh")
 mail_count+=(["foreground"]="white")
 mail_count+=(["background"]="red")
 mail_count+=(["separator"]="${separator_left_bold}")
-register_segment "mail_count"
+# register_segment "mail_count"
 
 declare -A now_playing
 if [ "$PLATFORM" == "linux" ]; then
@@ -51,7 +51,7 @@ if [[ ${now_playing["script"]} ]]; then
 	now_playing+=(["foreground"]="colour37")
 	now_playing+=(["background"]="colour234")
 	now_playing+=(["separator"]="${separator_left_bold}")
-	register_segment "now_playing"
+	# register_segment "now_playing"
 fi
 
 declare -A cpu
